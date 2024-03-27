@@ -71,15 +71,13 @@ public class CustomerPageController {
     private PurchaseDao pDao;
     @Autowired
     private RentalDao rDao;
-    @Autowired
-    private SearchService searchService;
-    @Autowired
-    private FileMapper fileMapper;
+
     @Autowired
     private FavoriteMapper favMp;
     @Autowired
     private FavoriteService fStSer;
 
+    
     @GetMapping // 일반회원 마이페이지홈
     public String mypage(Model model, HttpSession session) {
 

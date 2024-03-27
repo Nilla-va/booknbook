@@ -45,11 +45,11 @@
 			<optional>true</optional>
 		</dependency>
 
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-tomcat</artifactId>
-					<scope>provided</scope>
-				</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -62,23 +62,28 @@
 			<scope>test</scope>
 		</dependency>
 
-
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
+		<!-- <dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-security</artifactId>
+		</dependency> -->
+		<!--spring-security-core: 비번 암호화 -->
 		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+		</dependency>
+		<!--mailgun : 이메일API 라이브러리-->
+		<!-- <dependency>
+    		<groupId>com.mailgun</groupId>
+    		<artifactId>mailgun-java</artifactId>
+    		<version>1.0.8</version>
+    	</dependency> -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail -->
+		<!-- <dependency>
     		<groupId>org.springframework.boot</groupId>
     		<artifactId>spring-boot-starter-mail</artifactId>
     		<version>3.1.1</version>
-		</dependency>
-
-	
-
-<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-security</artifactId>
-</dependency>
-
-
+		</dependency> -->
 
 		<!--tomcat-embed-jasper -->
 		<dependency>
@@ -113,24 +118,14 @@
 			<artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
 			<version>1.16</version>
 		</dependency>
-		<!--spring-security-core: 비번 암호화 -->
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-core</artifactId>
-		</dependency>
-		<!--mailgun : 이메일API 라이브러리-->
-		<dependency>
-    		<groupId>com.mailgun</groupId>
-    		<artifactId>mailgun-java</artifactId>
-    		<version>1.0.8</version>
-    	</dependency>
+
 		<!-- websocket : 웹소켓 실시간 체크 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-websocket</artifactId>
 		</dependency>
 
-<!-- Gson : Google이 제공하는 JSON 처리 라이브러리 -->
+		<!-- Gson : Google이 제공하는 JSON 처리 라이브러리 -->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>

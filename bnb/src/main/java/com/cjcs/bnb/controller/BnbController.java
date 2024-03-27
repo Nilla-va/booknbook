@@ -25,11 +25,9 @@ import com.cjcs.bnb.dao.PurchaseDao;
 import com.cjcs.bnb.dao.RentalDao;
 import com.cjcs.bnb.dao.ReportBoardDao;
 import com.cjcs.bnb.dto.BookDto;
-import com.cjcs.bnb.dto.MainInfoDto;
 import com.cjcs.bnb.dto.MemberDto;
 import com.cjcs.bnb.dto.ReportBoardDto;
 import com.cjcs.bnb.dto.SearchDto;
-import com.cjcs.bnb.dto.SellerDto;
 import com.cjcs.bnb.service.BoardService;
 import com.cjcs.bnb.service.BookService;
 import com.cjcs.bnb.service.MainService;
@@ -51,8 +49,6 @@ public class BnbController {
     @Autowired
     private SellerService sSer;
     @Autowired
-    private MemberService mSer;
-    @Autowired
     private BookService bookService;
 
     @Autowired
@@ -70,7 +66,7 @@ public class BnbController {
     private CategoryDao categoryDao;
     @Autowired
     private MainService mainService;
-@Autowired
+    @Autowired
     private BoardService boardService;
 
 

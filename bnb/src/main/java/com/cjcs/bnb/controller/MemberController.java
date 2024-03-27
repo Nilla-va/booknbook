@@ -224,7 +224,7 @@ public class MemberController {
     @GetMapping("/join2")
     public String join2() {
 
-        log.info("개인회원가입(폼)");
+        log.info("서점회원가입(폼)");
         return "member/join2";
 
     }

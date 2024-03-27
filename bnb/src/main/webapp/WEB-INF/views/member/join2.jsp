@@ -86,7 +86,7 @@
       </div>
       <button type="submit">회원가입</button>
     </form>
-    <p>이미 계정이 있으신가요? <a href="/css/member/login">로그인</a></p>
+    <p>이미 계정이 있으신가요? <a href="/member/login">로그인</a></p>
 
 
     <%@include file="/WEB-INF/tiles/footer.jsp" %>
